@@ -47,17 +47,20 @@ input {
 
 button {
     border: 0 none;
-    border-radius: 2rem;
+    border-radius: 2px;
     color: #fff;
+    text-transform: uppercase;
     background-color: #090999;
     width: 10rem;
     padding: 1rem 2rem;
     cursor: pointer;
+    letter-spacing: 1px;
     margin-bottom: 0;
+    content:Enviar;
 }
 
 button:hover {
-    background-color: #5353c8;
+    background-color: #4545ec;
 }
 
 .mensagem,
