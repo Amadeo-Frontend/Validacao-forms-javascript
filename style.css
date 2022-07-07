@@ -18,7 +18,7 @@ body {
 }
 
 form {
-    background: rgb(144, 250, 246);
+    background: rgb(77, 171, 253);
     padding: 20px;
     display: block;
     margin: 20px auto;
@@ -42,7 +42,7 @@ input, button {
 input {
     width: 85%;
     padding: 1rem 2rem;
-    border-radius: 5%;
+    border-radius: 3%;
 }
 
 button {
@@ -50,7 +50,7 @@ button {
     border-radius: 2px;
     color: #fff;
     text-transform: uppercase;
-    background-color: #090999;
+    background-color: #a21c05;
     width: 10rem;
     padding: 1rem 2rem;
     cursor: pointer;
@@ -72,4 +72,16 @@ button:hover {
 
 .erro {
     border-color: rgb(247, 14, 14);
+}
+.alert{
+    color:rgb(233, 249, 141);
+    padding: 20px;
+    margin-bottom: 5px;
+    width: 86%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+}
+.alert.alert-danger{
+    background-color: rgb(247, 16, 16);
 }

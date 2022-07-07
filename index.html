@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/form.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Formulário</title>
 </head>
@@ -15,12 +16,16 @@
     <form id="formulario-02">
 
         <h2>Faça o seu cadastro</h2>
-        <input type="text" placeholder="digite seu nome" class="obrigatorio" name="nome">
-        <input type="text" placeholder="digite seu e-mail" class="obrigatorio" name="email">
-        <input type="number" placeholder="digite seu telefone" class="" name="telefone">
-        <input type="number" placeholder="digite seu cep" class="obrigatorio" name="cep">
-        <input type="text" placeholder="digite sua cidade" class="obrigatorio" name="cidade">
-        <input type="text" placeholder="digite seu uf" class="obrigatorio" name="uf" maxlength="2">
+        <div class="row">
+            <div class="col-12 col-s-12" id="msgm">
+                <!--Div para as mensagens do formulário.-->
+       </div></div>
+        <input type="text" placeholder="digite seu nome" class="obrigatorio" name="nome" requared>
+        <input type="email" placeholder="digite seu e-mail" class="obrigatorio" name="email" required>
+        <input type="tel" placeholder="digite seu telefone" class="telefone" name="telefone"maxlength='11' required>
+        <input type="number" placeholder="digite seu cep" class="obrigatorio" name="cep" maxlength="8" required>
+        <input type="text" placeholder="digite sua cidade" class="obrigatorio" name="cidade" required>
+        <input type="text" placeholder="digite seu uf" class="obrigatorio" name="uf" maxlength="2" required>
         <button id="calcular" class="calcular" type="submit">Enviar</button>
     </form>
 
