@@ -56,7 +56,7 @@ button {
     cursor: pointer;
     letter-spacing: 1px;
     margin-bottom: 0;
-    content:Enviar;
+    content: Enviar;
 }
 
 button:hover {
@@ -71,10 +71,12 @@ button:hover {
 }
 
 .erro {
-    border-color: rgb(247, 14, 14);
+    border-color: rgb(247, 4, 4);
+
 }
-.alert{
-    color:rgb(233, 249, 141);
+
+.alert {
+    color: rgb(233, 249, 141);
     padding: 20px;
     margin-bottom: 5px;
     width: 86%;
@@ -82,6 +84,7 @@ button:hover {
     font-weight: 800;
     font-size: 12px;
 }
-.alert.alert-danger{
+
+.alert.alert-danger {
     background-color: rgb(247, 16, 16);
 }

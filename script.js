@@ -11,7 +11,7 @@ function validaCampo(elemento) {
       let msg = document.createElement("div");
       msg.classList.add("alert");
       msg.classList.add("alert-danger");
-      msg.textContent = "verifique o preenchimento dos campos em vermelho.";
+      msg.textContent = "Por favor, preencha os campos em vermelho!!!";
       let msgm = document.querySelector("#msgm");
       msgm.appendChild(msg);
       return false;
@@ -35,7 +35,7 @@ function validaCampoNumerico(elemento) {
       this.parentNode.classList.remove("erro");
     } else {
       document.querySelector(".mensagem").innerHTML =
-        "verifique o preenchimento dos campos em destaque";
+        "Por favor, preencha os campos em vermelho!!!";
       this.classList.add("erro");
       this.parentNode.classList.add("erro");
       return false;
@@ -54,7 +54,7 @@ function validaEmail(elemento) {
       this.parentNode.classList.remove("erro");
     } else {
       document.querySelector(".mensagem").innerHTML =
-        "verifique o preenchimento dos campos em destaque";
+        "Por favor, preencha os campos em vermelho!!!";
       this.classList.add("erro");
       this.parentNode.classList.add("erro");
       return false;
@@ -66,7 +66,7 @@ let camposObrigatorios = document.querySelectorAll("input.obrigatorio");
 let camposNumericos = document.querySelectorAll("input.numero");
 let camposEmail = document.querySelectorAll("input.email");
 
-let camposTelefone = document.querySelectorAll("input.telefone")
+let camposTelefone = document.querySelectorAll("input.telefone");
 for (let emFoco of camposObrigatorios) {
   validaCampo(emFoco);
 }
@@ -78,17 +78,15 @@ for (let emFoco of camposNumericos) {
 for (let emFoco of camposEmail) {
   validaEmail(emFoco);
 
-for (let emFoco of camposTelefone) {
-  validaEmail(emFoco);
-}
-let textUf = document.querySelectorAll("input.uf");
-let caracterMax = textUf.maxLength;
+  for (let emFoco of camposTelefone) {
+    validaEmail(emFoco);
+  }
+  let textUf = document.querySelectorAll("input.uf");
+  let caracterMax = textUf.maxLength;
 
-let numFone = document.querySelectorAll("input.telefone")
-let caractMax = numFone.maxLength
+  let numFone = document.querySelectorAll("input.telefone");
+  let caractMax = numFone.maxLength;
 
-let calcularBtn = document.getElementById("calcular");
-let calcular = false;
-
-
+  let calcularBtn = document.getElementById("calcular");
+  let calcular = false;
 }
